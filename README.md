@@ -1,2 +1,2 @@
-# snt
+# snt-
 Studies &amp; Trials
