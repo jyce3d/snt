@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- DAO -->
+		<bean id="authorityDao" class="be.sdlg.snt.dao.AuthorityDao"> <!-- must be injected by autowiring in a service -->
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="userDao" class="be.sdlg.snt.dao.DBUserDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="studyDao" class="be.sdlg.snt.dao.StudyDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="locationDao" class="be.sdlg.snt.dao.LocationDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="properDao" class="be.sdlg.snt.dao.DBProperDao">
+		<property name="sessionFactory" ref="sessionFactory" />	
+	</bean>
+	<bean id="metadataVersionDao" class="be.sdlg.snt.dao.MetadataVersionDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="studyUserDao" class="be.sdlg.snt.dao.StudyUserDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="studyLocationDao" class="be.sdlg.snt.dao.StudyLocationDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="subjectDataDao" class="be.sdlg.snt.dao.SubjectDataDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="signatureDefDao" class="be.sdlg.snt.dao.SignatureDefDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="clinicalDataDao" class="be.sdlg.snt.dao.ClinicalDataDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="signatureDao" class="be.sdlg.snt.dao.SignatureDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="subjectDataAuditDao" class="be.sdlg.snt.dao.SubjectDataAuditDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="studyEventDefDao" class="be.sdlg.snt.dao.StudyEventDefDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		<bean id="studyEventRefDao" class="be.sdlg.snt.dao.StudyEventRefDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="protocolDao" class="be.sdlg.snt.dao.ProtocolDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		<bean id="formDefDao" class="be.sdlg.snt.dao.FormDefDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="formRefDao" class="be.sdlg.snt.dao.FormRefDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		<bean id="descriptionDao" class="be.sdlg.snt.dao.DescriptionDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		<bean id="itemGroupDefDao" class="be.sdlg.snt.dao.ItemGroupDefDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="itemGroupRefDao" class="be.sdlg.snt.dao.ItemGroupRefDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="codeListDao" class="be.sdlg.snt.dao.CodeListDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="codeListItemDao" class="be.sdlg.snt.dao.CodeListItemDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		<bean id="decodeDao" class="be.sdlg.snt.dao.DecodeDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="questionDao" class="be.sdlg.snt.dao.QuestionDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		<bean id="itemDefDao" class="be.sdlg.snt.dao.ItemDefDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		<bean id="itemRefDao" class="be.sdlg.snt.dao.ItemRefDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		<bean id="studyEventDataDao" class="be.sdlg.snt.dao.StudyEventDataDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		<bean id="formDataDao" class="be.sdlg.snt.dao.FormDataDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="itemGroupDataDao" class="be.sdlg.snt.dao.ItemGroupDataDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="itemDataDao" class="be.sdlg.snt.dao.ItemDataDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="studyEventDataAuditDao" class="be.sdlg.snt.dao.StudyEventDataAuditDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		<bean id="formDataAuditDao" class="be.sdlg.snt.dao.FormDataAuditDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="itemGroupDataAuditDao" class="be.sdlg.snt.dao.ItemGroupDataAuditDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+	<bean id="itemDataAuditDao" class="be.sdlg.snt.dao.ItemDataAuditDao">
+		<property name="sessionFactory" ref="sessionFactory" />		
+	</bean>
+		
+</beans>
